@@ -1,0 +1,26 @@
+{
+    "name": "The Adventure Of Rocket Boot Dog Quest To Save JetPack Cat Part 1",
+    "description": "",
+    "dependencies": {
+        "device": "*",
+        "controller": "*"
+    },
+    "files": [
+        "main.blocks",
+        "main.ts",
+        "README.md",
+        "tilemap.g.jres",
+        "tilemap.g.ts"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "targetVersions": {
+        "target": "1.2.10",
+        "targetId": "arcade"
+    },
+    "supportedTargets": [
+        "arcade"
+    ],
+    "preferredEditor": "blocksprj"
+}
