@@ -3,7 +3,8 @@
     "description": "",
     "dependencies": {
         "device": "*",
-        "controller": "*"
+        "controller": "*",
+        "pxt-status-bar": "github:jwunderl/pxt-status-bar#v0.4.0"
     },
     "files": [
         "main.blocks",
@@ -16,7 +17,7 @@
         "test.ts"
     ],
     "targetVersions": {
-        "target": "1.2.10",
+        "target": "1.2.16",
         "targetId": "arcade"
     },
     "supportedTargets": [

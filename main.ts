@@ -1,8 +1,11 @@
 scene.onOverlapTile(SpriteKind.Player, myTiles.tile2, function (sprite, location) {
-    info.changeLifeBy(-1)
+    hp.value += -1
 })
 scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.hazardLava0, function (sprite, location) {
-    info.changeLifeBy(-1)
+    hp.value += -1
+})
+statusbars.onZero(StatusBarKind.Health, function (status) {
+    game.over(false)
 })
 controller.A.onEvent(ControllerButtonEvent.Released, function () {
     projectile = sprites.createProjectileFromSprite(img`
@@ -26,38 +29,21 @@ controller.A.onEvent(ControllerButtonEvent.Released, function () {
     music.pewPew.playUntilDone()
 })
 scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.hazardLava1, function (sprite, location) {
-    info.changeLifeBy(-1)
+    hp.value += -1
 })
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Player, function (sprite, otherSprite) {
     jetpack_cat.follow(mySprite, 100)
 })
 scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.collectibleRedCrystal, function (sprite, location) {
-    info.changeLifeBy(-1)
+    hp.value += -1
 })
 scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.doorOpenNorth, function (sprite, location) {
     game.over(true)
 })
 let projectile: Sprite = null
-let mySprite: Sprite = null
+let hp: StatusBarSprite = null
 let jetpack_cat: Sprite = null
-info.setLife(0)
-info.setLife(100)
-jetpack_cat = sprites.create(img`
-    e e e . . . . e e e . . . . 
-    c d d c . . c d d c . . . . 
-    c b d d f f d d b c . . . . 
-    c 3 b d d b d b 3 c . . . . 
-    f b 3 d d d d 3 b f . . . . 
-    e d d d d d d d d e . . . . 
-    e d f d d d d f d f f f f f 
-    f d d f d d f d f f f f 2 f 
-    f b d d b b d d f f 2 5 5 f 
-    . f 2 2 2 2 2 2 f f f f 2 f 
-    . f b d d d d d d f f f f f 
-    . f d d d d d b d d f f f . 
-    . f d f f f d f f d f . . . 
-    . f f . . f f . . f f . . . 
-    `, SpriteKind.Player)
+let mySprite: Sprite = null
 mySprite = sprites.create(img`
     . . 4 4 4 . . . . 4 4 4 . . . . 
     . 4 5 5 5 e . . e 5 5 5 4 . . . 
@@ -78,6 +64,27 @@ mySprite = sprites.create(img`
     . . . . . . . . . . . . . . . . 
     . . . . . . . . . . . . . . . . 
     `, SpriteKind.Player)
+jetpack_cat = sprites.create(img`
+    e e e . . . . e e e . . . . 
+    c d d c . . c d d c . . . . 
+    c b d d f f d d b c . . . . 
+    c 3 b d d b d b 3 c . . . . 
+    f b 3 d d d d 3 b f . . . . 
+    e d d d d d d d d e . . . . 
+    e d f d d d d f d f f f f f 
+    f d d f d d f d f f f f 2 f 
+    f b d d b b d d f f 2 5 5 f 
+    . f 2 2 2 2 2 2 f f f f 2 f 
+    . f b d d d d d d f f f f f 
+    . f d d d d d b d d f f f . 
+    . f d f f f d f f d f . . . 
+    . f f . . f f . . f f . . . 
+    `, SpriteKind.Player)
+hp = statusbars.create(20, 4, StatusBarKind.Health)
+hp.setLabel("HP")
+hp.value = 50
+hp.max = 50
+hp.attachToSprite(mySprite)
 tiles.placeOnRandomTile(mySprite, myTiles.tile15)
 scene.cameraFollowSprite(mySprite)
 scene.setBackgroundColor(9)
