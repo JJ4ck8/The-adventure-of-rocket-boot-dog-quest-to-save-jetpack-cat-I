@@ -64,11 +64,6 @@
         "mimeType": "image/x-mkcd-f4",
         "tilemapTile": true
     },
-    "tile13": {
-        "data": "hwQQABAAAADu7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7uXuXu7u7u7u5VVeXu7u7u7uXuVe7u7u7uVe5e7u7u7u5eVVXu7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7g==",
-        "mimeType": "image/x-mkcd-f4",
-        "tilemapTile": true
-    },
     "tile14": {
         "data": "hwQQABAAAADu7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7g==",
         "mimeType": "image/x-mkcd-f4",
@@ -76,6 +71,26 @@
     },
     "tile15": {
         "data": "hwQQABAAAAD/HxH/HxH/H/8fEf8fEf8f/x8R/x8R/x8R8f8R8f8R8RHx/xHx/xHxEfH/EfH/EfH/HxH/HxH/H/8fEf8fEf8f/x8R/x8R/x8R8f8R8f8R8RHx/xHx/xHxEfH/EfH/EfH/HxH/HxH/H/8fEf8fEf8f/x8R/x8R/x8R8f8R8f8R8Q==",
+        "mimeType": "image/x-mkcd-f4",
+        "tilemapTile": true
+    },
+    "tile16": {
+        "data": "hwQQABAAAAD//////////////////////6r6//////+qqvr//////6qq////////qvr////////6//////////////////////////////+qqv///////6qqqv//////qqqq+v///////6r6/////////////////////////////////////w==",
+        "mimeType": "image/x-mkcd-f4",
+        "tilemapTile": true
+    },
+    "tile13": {
+        "data": "hwQQABAAAAAiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIg==",
+        "mimeType": "image/x-mkcd-f4",
+        "tilemapTile": true
+    },
+    "tile17": {
+        "data": "hwQQABAAAAAREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREQ==",
+        "mimeType": "image/x-mkcd-f4",
+        "tilemapTile": true
+    },
+    "tile18": {
+        "data": "hwQQABAAAAAiESEiEhERIiISESIiESIiESIRIRIhIhIiIRIhEiISESIiEiEiIiISISIiIiISESIiEiEiIhIhIiIiEiIiIiIiISIiIiIhIhEREREiIRIRERERISIRIhERESEiIiIhEhERISIiIhEiIiEiIiIiESEiIhIhEiIRESIiESESIRIRIQ==",
         "mimeType": "image/x-mkcd-f4",
         "tilemapTile": true
     },
